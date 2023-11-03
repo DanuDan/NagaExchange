@@ -1,4 +1,4 @@
-import { Box, FlatList, HStack, Input, Text, VStack, Image, Stack, ScrollView, KeyboardAvoidingView } from "native-base";
+import { Box, HStack, Input, Text, VStack, Image, Stack, ScrollView, KeyboardAvoidingView } from "native-base";
 import { ImageBackground } from "react-native";
 import { Feather } from '@expo/vector-icons'
 import { useEffect, useState } from "react";
@@ -26,7 +26,7 @@ export default function Content() {
     
     return (
 
-        <ImageBackground source={require("../../assets/wallpaper.png")} resizeMode="cover" className="flex-1 h-full w-screen absolute">
+        <ImageBackground source={require("../../assets/wallpaper.png")} resizeMode="cover" className="flex-1 h-[103vh] w-screen absolute">
                 <ScrollView className="bg-transparent w-full h-full px-2 mb-2 ">
                     <Box className="bg-[#DFDFDF] w-full rounded-full pr-5 pl-2 mt-20 mb-10">
                         <Input variant="unstyled" placeholder="Cari Aset" type="text" className=" text-base w-full text-black font-semibold"
